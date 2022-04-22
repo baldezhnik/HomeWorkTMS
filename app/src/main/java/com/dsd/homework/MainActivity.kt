@@ -9,7 +9,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val hw = HW14()
-        hw.doHomeWork()
+        val hw14 = HW14()
+        val tv: TextView = findViewById(R.id.textView)
+        tv.text = hw14.doHomeWork1()
+
+
+
     }
 }
