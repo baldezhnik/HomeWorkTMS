@@ -1,8 +1,5 @@
 package com.dsd.homework
 
-import android.util.Log
-import android.widget.TextView
-
 class HW14 {
 
     inner class User (private val name: String, private val secondName: String, private var age:Int){
@@ -22,5 +19,17 @@ class HW14 {
         addUser("Петя","Носов", 25)
         addUser("Вася","Пупкин", 80)
         return outUsers()
+    }
+
+    fun doHomeWork2() :String {
+        return when ((1..7).random()){
+            1 -> "Да"
+            2 -> "Нет"
+            3 -> "Скорее всего да"
+            4 -> "Скорее всего нет"
+            5 -> "Возможно"
+            6 -> "Имеются перспективы"
+            else -> "Вопрос задан неверно"
+        }
     }
 }
