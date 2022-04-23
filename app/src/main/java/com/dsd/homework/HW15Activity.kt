@@ -37,4 +37,12 @@ class HW15Activity : AppCompatActivity() {
         textView14.text = listUsers.outUsers()
     }
 
+    fun generateInt (view: View) {
+        val textView16: TextView = findViewById(R.id.textView16)
+        val i = (5..155).random()
+        textView16.text = if (i in 25..100 ) "число $i входит в диапазон (25;100)"
+            else "число $i не входит в диапазон (25;100)"
+
+    }
+
 }
