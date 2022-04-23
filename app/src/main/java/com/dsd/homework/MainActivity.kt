@@ -12,9 +12,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun newActiv(view: View) {
-        val activ2 = Intent(this, HW14Activity::class.java)
-        startActivity(activ2)
+    fun activityHW14(view: View) {
+        val activity = Intent(this, HW14Activity::class.java)
+        startActivity(activity)
     }
+    fun activityHW15 (view: View) {
+        val activity = Intent(this, HW15Activity::class.java)
+        startActivity(activity)
+    }
+
 
 }
