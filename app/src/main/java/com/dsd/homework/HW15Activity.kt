@@ -22,6 +22,9 @@ class HW15Activity : AppCompatActivity() {
         listUsers.addUser("Маша","Сидорова", 17)
         outList()
 
+        val textView : TextView = findViewById(R.id.textView20)
+        textView.text = "Cумма чисел от 1 до 100 равна ${(1..100).sum()}"
+
     }
     fun sortUsers(view: View) {
         listUsers.sortUsers()
