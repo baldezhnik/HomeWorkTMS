@@ -4,7 +4,6 @@ class ListUsers() {
 
     private var usersList: MutableList<User> = mutableListOf()
 
-
     fun addUser (Name: String, secondName: String, age:Int) =
         usersList.add(User(Name,secondName,age))
 

@@ -3,6 +3,7 @@ package com.dsd.homework
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 import android.widget.TextView
 
 class HW15Activity : AppCompatActivity() {
@@ -42,7 +43,15 @@ class HW15Activity : AppCompatActivity() {
         val i = (5..155).random()
         textView16.text = if (i in 25..100 ) "число $i входит в диапазон (25;100)"
             else "число $i не входит в диапазон (25;100)"
+    }
 
+    fun summaCifr (view: View) {
+        val textView18: TextView = findViewById(R.id.textView18)
+        val editTextNumber: EditText = findViewById(R.id.editTextNumber)
+        val str = editTextNumber.text.toString()
+        var sum : Int = 0
+        str.forEach { c: Char -> sum+=c.digitToInt() }
+        textView18.text = "Сумма цифр в числе равна $sum"
     }
 
 }
