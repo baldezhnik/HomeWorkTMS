@@ -1,5 +1,7 @@
 package com.dsd.homework
 
+import java.util.*
+
 class HW14 {
 
     inner class User (private val name: String, private val secondName: String, private var age:Int){
@@ -54,4 +56,12 @@ class HW14 {
             "Ветрянкой",
             "Оспой"),)
 
+    fun doHomeWork4 (word : String) :String {
+        val reg = Regex("[а-яё]+", RegexOption.IGNORE_CASE)
+        if (!reg.matches(word)) return "неправильный ввод"
+        val wordLow = word.lowercase(Locale.getDefault())
+        var sum = 0
+        wordLow.forEach { c: Char -> sum+= c.code -1071 }
+        return "сумма $sum"
+    }
 }

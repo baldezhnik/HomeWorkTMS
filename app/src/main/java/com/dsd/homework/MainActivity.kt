@@ -3,6 +3,7 @@ package com.dsd.homework
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         button4.setOnClickListener { checkOtvet(numZag, button4.text as String)
             numZag = zapolnitZagadku()}
 
+        val button5: Button = findViewById(R.id.button5)
+        val plainTextView2: EditText = findViewById(R.id.editTextTextPersonName2)
+        val textView10: TextView = findViewById(R.id.textView10)
+        button5.setOnClickListener { textView10.text = hw14.doHomeWork4(plainTextView2.text.toString()) }
     }
     private fun zapolnitZagadku () : Int{
         val hw14 = HW14()
