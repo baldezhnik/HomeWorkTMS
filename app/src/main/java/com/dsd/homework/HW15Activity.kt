@@ -22,8 +22,14 @@ class HW15Activity : AppCompatActivity() {
         listUsers.addUser("Маша","Сидорова", 17)
         outList()
 
-        val textView : TextView = findViewById(R.id.textView20)
-        textView.text = "Cумма чисел от 1 до 100 равна ${(1..100).sum()}"
+        val textView20 : TextView = findViewById(R.id.textView20)
+        textView20.text = "Cумма чисел от 1 до 100 равна ${(1..100).sum()}"
+
+        val table = Table(90, "венге", "дерево", 90, 4)
+        val cat = Cat("Протон", 4,"серый металик", 24, 60)
+        val textView23 : TextView = findViewById(R.id.textView23)
+        textView23.text = "Котик, с высотой прыжка ${cat.jumpHeight}см, ${cat.jump(table)} " +
+                "на стол высотой ${table.height}см"
 
     }
     fun sortUsers(view: View) {
@@ -36,7 +42,7 @@ class HW15Activity : AppCompatActivity() {
         outList()
     }
 
-    fun outList () {
+    private fun outList () {
         val textView14: TextView = findViewById(R.id.textView14)
         textView14.text = listUsers.outUsers()
     }
@@ -52,7 +58,7 @@ class HW15Activity : AppCompatActivity() {
         val textView18: TextView = findViewById(R.id.textView18)
         val editTextNumber: EditText = findViewById(R.id.editTextNumber)
         val str = editTextNumber.text.toString()
-        var sum : Int = 0
+        var sum = 0
         str.forEach { c: Char -> sum+=c.digitToInt() }
         textView18.text = "Сумма цифр в числе равна $sum"
     }
