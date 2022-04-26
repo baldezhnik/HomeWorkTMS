@@ -8,8 +8,8 @@
     tools:ignore="ExtraText">
 
   <TextView
-      android:id="@+id/textView30"
-      android:layout_width="wrap_content"
+      android:id="@+id/txtv_act16_hw4"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
@@ -52,7 +52,7 @@
 
   <TextView
       android:id="@+id/txtv_act16_hw1"
-      android:layout_width="wrap_content"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
@@ -84,8 +84,8 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_act16_hw1" />
 
   <TextView
-      android:id="@+id/textView25"
-      android:layout_width="wrap_content"
+      android:id="@+id/txtv_act16_hw2"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
@@ -116,8 +116,8 @@
       app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
   <TextView
-      android:id="@+id/textView28"
-      android:layout_width="wrap_content"
+      android:id="@+id/txtv_act16_hw3"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
@@ -148,8 +148,8 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_act16_hw4" />
 
   <TextView
-      android:id="@+id/textView32"
-      android:layout_width="wrap_content"
+      android:id="@+id/txtv_act16_hw5"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
@@ -180,8 +180,8 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_act16_hw5" />
 
   <TextView
-      android:id="@+id/textView34"
-      android:layout_width="wrap_content"
+      android:id="@+id/txtv_act16_hw6"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
@@ -212,8 +212,8 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_act16_hw6" />
 
   <TextView
-      android:id="@+id/textView36"
-      android:layout_width="wrap_content"
+      android:id="@+id/txtv_act16_hw7"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
       android:layout_marginTop="16dp"
