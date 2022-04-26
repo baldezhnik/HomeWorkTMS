@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import java.lang.Integer.max
 
 class HW16Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +31,13 @@ class HW16Activity : AppCompatActivity() {
         val btnAct16HW2: Button = findViewById(R.id.btn_act16_hw2)
         val txtvAct16HW2: TextView = findViewById(R.id.txtv_act16_hw2)
         btnAct16HW2.setOnClickListener {
-            txtvAct16HW2.text = "что-то тут надо сделать"
+            val a = (0..10).random()
+            val b = (0..10).random()
+            val c = (0..10).random()
+            val s: (Int, Int, Int) -> Int = { a, b, c ->
+                max((a * b * c), (a + b + c))
+            }
+            txtvAct16HW2.text = "a=$a, b=$b, c=$c, max=${s(a, b, c)}"
         }
 
         //#3
@@ -49,7 +56,6 @@ class HW16Activity : AppCompatActivity() {
             }
             txtvAct16HW3.text = "У студента с рейтингом $studentRating отметка $studentMark"
         }
-
 
         //#4
         val btnAct16HW4: Button = findViewById(R.id.btn_act16_hw4)
