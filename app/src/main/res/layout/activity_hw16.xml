@@ -8,7 +8,7 @@
     tools:ignore="ExtraText">
 
   <TextView
-      android:id="@+id/txtv_act16_hw4"
+      android:id="@+id/tv_act16_hw4"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
@@ -51,7 +51,7 @@
       app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
   <TextView
-      android:id="@+id/txtv_act16_hw1"
+      android:id="@+id/tv_act16_hw1"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
@@ -84,7 +84,7 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_act16_hw1" />
 
   <TextView
-      android:id="@+id/txtv_act16_hw2"
+      android:id="@+id/tv_act16_hw2"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
@@ -116,7 +116,7 @@
       app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
   <TextView
-      android:id="@+id/txtv_act16_hw3"
+      android:id="@+id/tv_act16_hw3"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
@@ -148,7 +148,7 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_act16_hw4" />
 
   <TextView
-      android:id="@+id/txtv_act16_hw5"
+      android:id="@+id/tv_act16_hw5"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
@@ -180,7 +180,7 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_act16_hw5" />
 
   <TextView
-      android:id="@+id/txtv_act16_hw6"
+      android:id="@+id/tv_act16_hw6"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
@@ -212,7 +212,7 @@
       app:layout_constraintTop_toBottomOf="@+id/btn_act16_hw6" />
 
   <TextView
-      android:id="@+id/txtv_act16_hw7"
+      android:id="@+id/tv_act16_hw7"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
       android:layout_marginStart="16dp"
