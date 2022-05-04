@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.dsd.homework.hw18.HW18Activity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         activityHW14()
         activityHW15()
         activityHW16()
+        activityHW18()
     }
 
     private fun activityHW14() {
@@ -36,6 +38,14 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.btn_hw16)
         button.setOnClickListener {
             val intent = Intent(this, HW16Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun activityHW18() {
+        val button: Button = findViewById(R.id.btn_hw18)
+        button.setOnClickListener {
+            val intent = Intent(this, HW18Activity::class.java)
             startActivity(intent)
         }
     }
