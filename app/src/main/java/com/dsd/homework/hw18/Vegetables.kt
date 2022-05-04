@@ -26,4 +26,10 @@ data class Vegetables (private val region:Region) {
         this.cabbage = cabbage
         this.beet = beet
     }
+
+    override fun toString(): String {
+        return "В регионе $region собрано:\n картофеля=${String.format("%.2f", potato)}," +
+                " капусты=${String.format("%.2f", cabbage)}," +
+                " свеклы=${String.format("%.2f", beet)}\n"
+    }
 }
