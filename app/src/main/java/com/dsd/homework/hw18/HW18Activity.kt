@@ -25,30 +25,27 @@ class HW18Activity : AppCompatActivity() {
         val btn: Button = findViewById(R.id.btn_act18)
         btn.setOnClickListener {
             GlobalScope.launch {
-                //delay(5000)
+                delay(3000)
                 addData()
                 outData()
             }
         }
     }
 
-    fun addData() {
+    private fun addData() {
         regionList.forEach { it ->
             it.setVegetables(
-                it.getPotato() + (0..100).random().toFloat() / 100,
-                it.getCabbage() + (0..100).random().toFloat() / 100,
-                it.getBeet() + (0..100).random().toFloat() / 100
+                it.getPotato() + (0..100).random().toFloat() / 10,
+                it.getCabbage() + (0..100).random().toFloat() / 10,
+                it.getBeet() + (0..100).random().toFloat() / 10
             )
         }
     }
 
-    fun outData() {
-        val txt: TextView = findViewById(R.id.tv_act18)
-        txt.text=regionList.toString()
+    private fun outData() {
+        val tv_act18_vegetable: TextView = findViewById(R.id.tv_act18_vegetable)
+        val tv_act18_victory: TextView = findViewById(R.id.tv_act18_victory)
+        tv_act18_vegetable.text = regionList.toString()
+        tv_act18_victory.text = regionList.filter { it.getVictory() }.map { it.getRegion() }.toString()
     }
-
-    override fun toString(): String {
-        return "HW18Activity(regionList=$regionList)"
-    }
-
 }

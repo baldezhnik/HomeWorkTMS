@@ -4,32 +4,38 @@ data class Vegetables (private val region:Region) {
     private var potato: Float = 0F
     private var cabbage: Float = 0F
     private var beet: Float = 0F
+    private var victory: Boolean = false
 
-    fun getRegion(): Region {
-        return this.region
+    fun getVictory(): Boolean {
+        return victory
+    }
+
+    fun getRegion(): Region{
+        return region
     }
 
     fun getPotato(): Float {
-        return this.potato
+        return potato
     }
 
     fun getCabbage(): Float {
-        return this.cabbage
+        return cabbage
     }
 
     fun getBeet(): Float {
-        return this.beet
+        return beet
     }
 
     fun setVegetables(potato: Float, cabbage: Float, beet: Float) {
         this.potato = potato
         this.cabbage = cabbage
         this.beet = beet
+        victory = (potato>=100) and (cabbage>=100) and (beet>=100)
     }
 
     override fun toString(): String {
-        return "В регионе $region собрано:\n картофеля=${String.format("%.2f", potato)}," +
-                " капусты=${String.format("%.2f", cabbage)}," +
-                " свеклы=${String.format("%.2f", beet)}\n"
+        return "В регионе $region собрано:\n картофеля=${String.format("%.2f", potato)}т," +
+                " капусты=${String.format("%.2f", cabbage)}т," +
+                " свеклы=${String.format("%.2f", beet)}т\n"
     }
 }
