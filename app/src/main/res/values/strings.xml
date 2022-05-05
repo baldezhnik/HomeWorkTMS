@@ -14,7 +14,12 @@
     <string name="home_work15">Home work 15</string>
     <string name="home_work16">Home work 16</string>
     <string name="home_work17">Home work 17</string>
+    <string name="home_work18">Home work 18</string>
     <string name="todo">выполнить</string>
+    <string name="title_activity_hw18">HW18Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
     <string name="push_todo">Нажми для выполнения</string>
-
 </resources>

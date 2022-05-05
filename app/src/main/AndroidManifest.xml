@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeWork">
-        <activity
+      <activity          
+            android:name=".hw18.HW18Activity"
+            android:exported="false" />
+        <activity          
             android:name=".HW17Activity"
             android:exported="false" />
         <activity
