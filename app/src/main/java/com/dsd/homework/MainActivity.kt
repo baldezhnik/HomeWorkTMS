@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         activityHW14()
         activityHW15()
         activityHW16()
+        activityHW17()
     }
 
     private fun activityHW14() {
@@ -36,6 +37,14 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.btn_hw16)
         button.setOnClickListener {
             val intent = Intent(this, HW16Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun activityHW17() {
+        val button: Button = findViewById(R.id.btn_hw17)
+        button.setOnClickListener {
+            val intent = Intent(this, HW17Activity::class.java)
             startActivity(intent)
         }
     }
