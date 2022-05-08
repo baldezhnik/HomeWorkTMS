@@ -7,4 +7,41 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="austria_white">#FFFFFF</color>
+    <color name="austria_red">#C8102E</color>
+
+    <color name="belgium_yellow">#fddb20</color>
+    <color name="belgium_red">#ef303e</color>
+
+    <color name="guinea_red">#cf0921</color>
+    <color name="guinea_yellow">#fcd20f</color>
+    <color name="guinea_green">#009560</color>
+
+    <color name="italy_green">#009246</color>
+    <color name="italy_white">#F1F2F1</color>
+    <color name="italy_red">#CE2B37</color>
+
+    <color name="france_blue">#0055A4</color>
+    <color name="france_red">#EF4135</color>
+
+    <color name="madagscar_red">#fc3a2e</color>
+    <color name="madagscar_green">#007f37</color>
+
+    <color name="hungary_red">#cf2436</color>
+    <color name="hungary_green">#45714f</color>
+
+    <color name="germany_red">#ff0000</color>
+    <color name="germany_yellow">#ffcc00</color>
+
+    <color name="netherlands_red">#ff0000</color>
+    <color name="netherlands_blue">#21468b</color>
+
+    <color name="sierra_green">#18b637</color>
+    <color name="sierra_blue">#0073c7</color>
+
+    <color name="mauritius_red">#eb2336</color>
+    <color name="mauritius_blue">#131a6d</color>
+    <color name="mauritius_yellow">#ffd600</color>
+    <color name="mauritius_green">#00a650</color>
 </resources>
