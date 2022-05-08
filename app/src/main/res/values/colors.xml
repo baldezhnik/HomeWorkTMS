@@ -8,9 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="austria_white">#FFFFFF</color>
-    <color name="austria_red">#C8102E</color>
-
     <color name="belgium_yellow">#fddb20</color>
     <color name="belgium_red">#ef303e</color>
 
@@ -34,8 +31,9 @@
     <color name="germany_red">#ff0000</color>
     <color name="germany_yellow">#ffcc00</color>
 
-    <color name="netherlands_red">#ff0000</color>
-    <color name="netherlands_blue">#21468b</color>
+    <color name="romania_blue">#0047AB</color>
+    <color name="romania_yellow">#FCD116</color>
+    <color name="romania_red">#CE1126</color>
 
     <color name="sierra_green">#18b637</color>
     <color name="sierra_blue">#0073c7</color>

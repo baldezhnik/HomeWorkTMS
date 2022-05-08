@@ -13,12 +13,12 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
+        android:showDividers="middle"
+        android:stretchColumns="*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:stretchColumns="*"
-        android:showDividers="middle">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
             android:layout_width="match_parent"
@@ -29,10 +29,10 @@
                 android:id="@+id/flag_belgium"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                android:layout_marginStart="2dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -61,10 +61,10 @@
                 android:id="@+id/flag_hungray"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                android:layout_marginStart="2dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -90,10 +90,10 @@
                 android:id="@+id/flag_france"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                android:layout_marginStart="2dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -127,10 +127,10 @@
                 android:id="@+id/flag_sierra"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                android:layout_marginStart="2dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -160,10 +160,10 @@
                 android:id="@+id/flag_guinea"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                android:layout_marginStart="2dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -188,15 +188,14 @@
                     android:background="@color/guinea_green" />
             </LinearLayout>
 
-
             <LinearLayout
                 android:id="@+id/flag_germany"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
                 android:layout_marginTop="2dp"
                 android:layout_marginEnd="2dp"
                 android:layout_marginBottom="2dp"
-                android:layout_marginStart="2dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -224,8 +223,120 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp">
 
+                <TextView
+                    android:id="@+id/flag71"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintEnd_toStartOf="@id/flag72"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/flag72"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/madagscar_green"
+                    app:layout_constraintHorizontal_weight="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/flag71"
+                    app:layout_constraintTop_toBottomOf="@id/flag73" />
+
+                <TextView
+                    android:id="@+id/flag73"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/madagscar_red"
+                    app:layout_constraintBottom_toTopOf="@id/flag72"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/flag71"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/flag_mauritius"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/flag81"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mauritius_red" />
+
+                <TextView
+                    android:id="@+id/flag82"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mauritius_blue" />
+
+                <TextView
+                    android:id="@+id/flag83"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mauritius_yellow" />
+
+                <TextView
+                    android:id="@+id/flag84"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/mauritius_green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/flag_romania"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/flag91"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/romania_blue" />
+
+                <TextView
+                    android:id="@+id/flag92"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/romania_yellow" />
+
+                <TextView
+                    android:id="@+id/flag93"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/romania_red" />
+            </LinearLayout>
+        </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
