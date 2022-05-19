@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.lifecycle.Observer
 import com.dsd.homework.R
+import com.dsd.homework.User
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -16,6 +18,9 @@ class HW18Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hw18)
+
+        val model: RegionViewModel by viewModels()
+        model.getRegions().observe(this, Observer<List<Region>> {   })
 
         for (region in Region.values()) {
             regionList.add(Vegetables(region))
