@@ -30,6 +30,18 @@ class MainFragment : Fragment() {
         binding.btnHw14.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_HW14Fragment)
         }
+        binding.btnHw15.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_HW15Fragment)
+        }
+        binding.btnHw16.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_HW16Fragment)
+        }
+        binding.btnHw17.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_HW17Fragment)
+        }
+        binding.btnHw22.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_HW22Fragment)
+        }
     }
 
     override fun onDestroyView() {

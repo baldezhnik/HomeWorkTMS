@@ -13,6 +13,18 @@
         <action
             android:id="@+id/action_mainFragment_to_HW14Fragment"
             app:destination="@id/HW14Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW15Fragment"
+            app:destination="@id/HW15Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW22Fragment"
+            app:destination="@id/HW22Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW16Fragment"
+            app:destination="@id/HW16Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW17Fragment"
+            app:destination="@id/HW17Fragment" />
     </fragment>
     <fragment
         android:id="@+id/HW14Fragment"
@@ -21,6 +33,42 @@
         tools:layout="@layout/fragment_hw14" >
         <action
             android:id="@+id/action_HW14Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW15Fragment"
+        android:name="com.dsd.homework.hw15.HW15Fragment"
+        android:label="fragment_hw15"
+        tools:layout="@layout/fragment_hw15" >
+        <action
+            android:id="@+id/action_HW15Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW22Fragment"
+        android:name="com.dsd.homework.hw22.HW22Fragment"
+        android:label="fragment_hw22"
+        tools:layout="@layout/fragment_hw22" >
+        <action
+            android:id="@+id/action_HW22Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW16Fragment"
+        android:name="com.dsd.homework.hw16.HW16Fragment"
+        android:label="fragment_hw16"
+        tools:layout="@layout/fragment_hw16" >
+        <action
+            android:id="@+id/action_HW16Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW17Fragment"
+        android:name="com.dsd.homework.hw17.HW17Fragment"
+        android:label="fragment_hw17"
+        tools:layout="@layout/fragment_hw17" >
+        <action
+            android:id="@+id/action_HW17Fragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
