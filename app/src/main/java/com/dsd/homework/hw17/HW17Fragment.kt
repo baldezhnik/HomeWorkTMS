@@ -10,7 +10,6 @@ import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.SeekBar
 import com.dsd.homework.R
-import com.dsd.homework.databinding.FragmentHw16Binding
 import com.dsd.homework.databinding.FragmentHw17Binding
 
 class HW17Fragment : Fragment() {

@@ -39,8 +39,17 @@ class MainFragment : Fragment() {
         binding.btnHw17.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_HW17Fragment)
         }
+        binding.btnHw18.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_HW18Fragment)
+        }
+        binding.btnHw19.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_HW19Fragment)
+        }
         binding.btnHw22.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_HW22Fragment)
+        }
+        binding.btnHw23.setOnClickListener {
+            findNavController().navigate(R.id.action_mainFragment_to_HW23Fragment)
         }
     }
 

@@ -25,6 +25,15 @@
         <action
             android:id="@+id/action_mainFragment_to_HW17Fragment"
             app:destination="@id/HW17Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW19Fragment"
+            app:destination="@id/HW19Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW23Fragment"
+            app:destination="@id/HW23Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW18Fragment"
+            app:destination="@id/HW18Fragment" />
     </fragment>
     <fragment
         android:id="@+id/HW14Fragment"
@@ -69,6 +78,33 @@
         tools:layout="@layout/fragment_hw17" >
         <action
             android:id="@+id/action_HW17Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW19Fragment"
+        android:name="com.dsd.homework.hw19.HW19Fragment"
+        android:label="fragment_hw19"
+        tools:layout="@layout/fragment_hw19" >
+        <action
+            android:id="@+id/action_HW19Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW23Fragment"
+        android:name="com.dsd.homework.hw23.HW23Fragment"
+        android:label="fragment_hw24"
+        tools:layout="@layout/fragment_hw23" >
+        <action
+            android:id="@+id/action_HW23Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW18Fragment"
+        android:name="com.dsd.homework.hw18.HW18Fragment"
+        android:label="fragment_hw18"
+        tools:layout="@layout/fragment_hw18" >
+        <action
+            android:id="@+id/action_HW18Fragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
