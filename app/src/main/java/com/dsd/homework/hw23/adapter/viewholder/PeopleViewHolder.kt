@@ -1,6 +1,8 @@
 package com.dsd.homework.hw23.adapter.viewholder
 
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dsd.homework.R
@@ -21,9 +23,7 @@ class PeopleViewHolder(private val itemBinding : ItemUserBinding): RecyclerView.
                 .placeholder(R.drawable.ic_launcher_background)
                 .into(ivPhoto)
             ivPhoto.setOnClickListener{
-                val context = itemView.context as AppCompatActivity
-                context.supportFragmentManager.beginTransaction()
-                    .replace(R.id.nav_host, HW19Fragment()).commit()
+                itemView.findNavController().navigate(R.id.action_HW23Fragment_to_HW19Fragment2)
             }
         }
     }
