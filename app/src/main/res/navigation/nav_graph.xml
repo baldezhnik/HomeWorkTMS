@@ -73,10 +73,18 @@
         <action
             android:id="@+id/action_HW23Fragment_to_HW19Fragment2"
             app:destination="@id/HW19Fragment" />
+        <action
+            android:id="@+id/action_HW23Fragment_to_fullScreenPhotoFragment"
+            app:destination="@id/fullScreenPhotoFragment" />
     </fragment>
     <fragment
         android:id="@+id/HW18Fragment"
         android:name="com.dsd.homework.hw18.HW18Fragment"
         android:label="fragment_hw18"
         tools:layout="@layout/fragment_hw18" />
+    <fragment
+        android:id="@+id/fullScreenPhotoFragment"
+        android:name="com.dsd.homework.hw23.FullScreenPhotoFragment"
+        android:label="fragment_full_screen_photo"
+        tools:layout="@layout/fragment_full_screen_photo" />
 </navigation>

@@ -20,7 +20,7 @@ class HW14Fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentHw14Binding.inflate(inflater, container, false)
         return binding.root
     }
