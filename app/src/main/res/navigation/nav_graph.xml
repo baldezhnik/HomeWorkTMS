@@ -71,11 +71,10 @@
         android:label="fragment_hw24"
         tools:layout="@layout/fragment_hw23" >
         <action
-            android:id="@+id/action_HW23Fragment_to_HW19Fragment2"
-            app:destination="@id/HW19Fragment" />
-        <action
             android:id="@+id/action_HW23Fragment_to_fullScreenPhotoFragment"
-            app:destination="@id/fullScreenPhotoFragment" />
+            app:destination="@id/fullScreenPhotoFragment"
+            app:enterAnim="@anim/open_photo_full_screen_anim"
+            app:popExitAnim="@anim/close_photo_full_screen_anim" />
     </fragment>
     <fragment
         android:id="@+id/HW18Fragment"
