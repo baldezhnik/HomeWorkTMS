@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.dsd.homework.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_HW14Fragment"
+            app:destination="@id/HW14Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW15Fragment"
+            app:destination="@id/HW15Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW22Fragment"
+            app:destination="@id/HW22Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW16Fragment"
+            app:destination="@id/HW16Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW17Fragment"
+            app:destination="@id/HW17Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW19Fragment"
+            app:destination="@id/HW19Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW23Fragment"
+            app:destination="@id/HW23Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_HW18Fragment"
+            app:destination="@id/HW18Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW14Fragment"
+        android:name="com.dsd.homework.hw14.HW14Fragment"
+        android:label="fragment_hw14"
+        tools:layout="@layout/fragment_hw14" />
+    <fragment
+        android:id="@+id/HW15Fragment"
+        android:name="com.dsd.homework.hw15.HW15Fragment"
+        android:label="fragment_hw15"
+        tools:layout="@layout/fragment_hw15" />
+    <fragment
+        android:id="@+id/HW22Fragment"
+        android:name="com.dsd.homework.hw22.HW22Fragment"
+        android:label="fragment_hw22"
+        tools:layout="@layout/fragment_hw22" />
+    <fragment
+        android:id="@+id/HW16Fragment"
+        android:name="com.dsd.homework.hw16.HW16Fragment"
+        android:label="fragment_hw16"
+        tools:layout="@layout/fragment_hw16" />
+    <fragment
+        android:id="@+id/HW17Fragment"
+        android:name="com.dsd.homework.hw17.HW17Fragment"
+        android:label="fragment_hw17"
+        tools:layout="@layout/fragment_hw17" />
+    <fragment
+        android:id="@+id/HW19Fragment"
+        android:name="com.dsd.homework.hw19.HW19Fragment"
+        android:label="fragment_hw19"
+        tools:layout="@layout/fragment_hw19" />
+    <fragment
+        android:id="@+id/HW23Fragment"
+        android:name="com.dsd.homework.hw23.HW23Fragment"
+        android:label="fragment_hw24"
+        tools:layout="@layout/fragment_hw23" >
+        <action
+            android:id="@+id/action_HW23Fragment_to_HW19Fragment2"
+            app:destination="@id/HW19Fragment" />
+        <action
+            android:id="@+id/action_HW23Fragment_to_fullScreenPhotoFragment"
+            app:destination="@id/fullScreenPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HW18Fragment"
+        android:name="com.dsd.homework.hw18.HW18Fragment"
+        android:label="fragment_hw18"
+        tools:layout="@layout/fragment_hw18" />
+    <fragment
+        android:id="@+id/fullScreenPhotoFragment"
+        android:name="com.dsd.homework.hw23.FullScreenPhotoFragment"
+        android:label="fragment_full_screen_photo"
+        tools:layout="@layout/fragment_full_screen_photo" />
+</navigation>
