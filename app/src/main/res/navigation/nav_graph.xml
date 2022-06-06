@@ -12,28 +12,60 @@
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_HW14Fragment"
-            app:destination="@id/HW14Fragment" />
+            app:destination="@id/HW14Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_HW15Fragment"
-            app:destination="@id/HW15Fragment" />
+            app:destination="@id/HW15Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_HW22Fragment"
-            app:destination="@id/HW22Fragment" />
+            app:destination="@id/HW22Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_HW16Fragment"
-            app:destination="@id/HW16Fragment" />
+            app:destination="@id/HW16Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_HW17Fragment"
-            app:destination="@id/HW17Fragment" />
+            app:destination="@id/HW17Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_HW19Fragment"
-            app:destination="@id/HW19Fragment" />
+            app:destination="@id/HW19Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_HW23Fragment"
-            app:destination="@id/HW23Fragment" />
+            app:destination="@id/HW23Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_HW18Fragment"
-            app:destination="@id/HW18Fragment" />
+            app:destination="@id/HW18Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/HW14Fragment"
@@ -71,11 +103,10 @@
         android:label="fragment_hw24"
         tools:layout="@layout/fragment_hw23" >
         <action
-            android:id="@+id/action_HW23Fragment_to_HW19Fragment2"
-            app:destination="@id/HW19Fragment" />
-        <action
             android:id="@+id/action_HW23Fragment_to_fullScreenPhotoFragment"
-            app:destination="@id/fullScreenPhotoFragment" />
+            app:destination="@id/fullScreenPhotoFragment"
+            app:enterAnim="@anim/open_photo_full_screen_anim"
+            app:popExitAnim="@anim/close_photo_full_screen_anim" />
     </fragment>
     <fragment
         android:id="@+id/HW18Fragment"
