@@ -25,7 +25,7 @@ class PeopleViewHolder(private val itemBinding : ItemUserBinding): RecyclerView.
             ivPhoto.setOnClickListener{
                 itemView.findNavController().navigate(
                     R.id.action_HW23Fragment_to_fullScreenPhotoFragment,
-                    bundleOf(FullScreenPhotoFragment.uriUserPhoto to user.photo)
+                    bundleOf(FullScreenPhotoFragment.URI_USER_PHOTO to user.photo)
                     )
             }
         }

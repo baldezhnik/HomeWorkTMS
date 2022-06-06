@@ -26,13 +26,13 @@ class FullScreenPhotoFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         Glide.with(this)
-            .load(arguments?.getString(uriUserPhoto))
+            .load(arguments?.getString(URI_USER_PHOTO))
             .placeholder(R.drawable.ic_baseline_cloud_download_24)
             .error(R.drawable.ic_baseline_error_outline_24)
             .into(binding.ivFullScreenPhoto)
     }
 
     companion object {
-    const val uriUserPhoto = "URI"
+    const val URI_USER_PHOTO = "URI"
     }
 }
